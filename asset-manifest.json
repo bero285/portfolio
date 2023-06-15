@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d6ebe27f.css",
+    "main.js": "/portfolio/static/js/main.47bc583a.js",
+    "static/media/sociopedia.png": "/portfolio/static/media/sociopedia.9920dc0580e47cbc4130.png",
+    "static/media/netflix-clone.png": "/portfolio/static/media/netflix-clone.73eef52ea5f86392033d.png",
+    "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/landing-page.png": "/portfolio/static/media/landing-page.0d2d52271f45ea068655.png",
+    "static/media/movie-app.png": "/portfolio/static/media/movie-app.db72ef8712675a1a5c8b.png",
+    "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/credit-key1.png": "/portfolio/static/media/credit-key1.7e940e5e2634bb7e9616.png",
+    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/portfolio/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.d6406984faae37cf2811.png",
+    "static/media/calorie-calculator.png": "/portfolio/static/media/calorie-calculator.af9b921e197835e400a6.png",
+    "static/media/Burtons.otf": "/portfolio/static/media/Burtons.c46a2405716f236c4a9a.otf",
+    "static/media/freelancer.png": "/portfolio/static/media/freelancer.2de34b4a01c6417f1e04.png",
+    "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.d6ebe27f.css.map": "/portfolio/static/css/main.d6ebe27f.css.map",
+    "main.47bc583a.js.map": "/portfolio/static/js/main.47bc583a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6ebe27f.css",
+    "static/js/main.47bc583a.js"
+  ]
+}
