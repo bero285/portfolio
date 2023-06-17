@@ -104,7 +104,7 @@ function App() {
             </li>
             <li>
               <a
-                onClick={() => navigate("/projects")}
+                onClick={() => navigate("/portfolio/projects")}
                 className="bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
               >
                 Projects
@@ -273,6 +273,7 @@ function App() {
               {projects.slice(0, 4).map((item) => {
                 return (
                   <ProjectContainer
+                    key={item.name}
                     name={item.name}
                     tools={item.tools}
                     image={item.image}
@@ -284,7 +285,7 @@ function App() {
               })}
             </div>
             <a
-              onClick={() => navigate("/projects")}
+              onClick={() => navigate("/portfolio/projects")}
               className="bg-gradient-to-r cursor-pointer mt-5 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md "
             >
               <h2 className="">More Projects</h2>

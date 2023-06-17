@@ -12,9 +12,12 @@ root.render(
     <MyContextProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<App />} />
-          <Route path="/projects" element={<MyProjectPage />} />
+          <Route
+            path="/portfolio"
+            element={<Navigate to="/portfolio/home" />}
+          />
+          <Route path="/portfolio/home" element={<App />} />
+          <Route path="/portfolio/projects" element={<MyProjectPage />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

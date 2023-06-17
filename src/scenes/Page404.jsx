@@ -44,7 +44,7 @@ function Page404(props) {
             </li>
             <li>
               <a
-                onClick={() => navigate("/home")}
+                onClick={() => navigate("/portfolio/home")}
                 className="bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
               >
                 Home
@@ -71,7 +71,7 @@ function Page404(props) {
             </h1>
 
             <a
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/portfolio/home")}
               className="bg-gradient-to-r cursor-pointer mt-5 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
             >
               <h2 className="">Home</h2>
