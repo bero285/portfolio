@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d6ebe27f.css",
-    "main.js": "/portfolio/static/js/main.47bc583a.js",
+    "main.css": "/portfolio/static/css/main.8abb8006.css",
+    "main.js": "/portfolio/static/js/main.eae0eeb5.js",
     "static/media/sociopedia.png": "/portfolio/static/media/sociopedia.9920dc0580e47cbc4130.png",
     "static/media/netflix-clone.png": "/portfolio/static/media/netflix-clone.73eef52ea5f86392033d.png",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -20,11 +20,11 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/portfolio/index.html",
-    "main.d6ebe27f.css.map": "/portfolio/static/css/main.d6ebe27f.css.map",
-    "main.47bc583a.js.map": "/portfolio/static/js/main.47bc583a.js.map"
+    "main.8abb8006.css.map": "/portfolio/static/css/main.8abb8006.css.map",
+    "main.eae0eeb5.js.map": "/portfolio/static/js/main.eae0eeb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6ebe27f.css",
-    "static/js/main.47bc583a.js"
+    "static/css/main.8abb8006.css",
+    "static/js/main.eae0eeb5.js"
   ]
 }
