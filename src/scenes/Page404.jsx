@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { MyContext } from "../MyContextProvider";
 import { useContext } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Page404(props) {
   const navigate = useNavigate();
@@ -17,6 +17,9 @@ function Page404(props) {
       projectControls.start("visible");
     }
   }, [projectIsInView]);
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div
       className={`h-screen ${darkMode ? "dark " : ""}`}
@@ -43,12 +46,13 @@ function Page404(props) {
               )}
             </li>
             <li>
-              <a
-                onClick={() => navigate("/portfolio/home")}
+              <Link
+                to="/portfolio/home"
+                onClick={handleClick}
                 className="bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
               >
                 Home
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -70,12 +74,13 @@ function Page404(props) {
               Oops, Something Went Wrong
             </h1>
 
-            <a
-              onClick={() => navigate("/portfolio/home")}
+            <Link
+              to="/portfolio/home"
+              onClick={handleClick}
               className="bg-gradient-to-r cursor-pointer mt-5 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
             >
               <h2 className="">Home</h2>
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

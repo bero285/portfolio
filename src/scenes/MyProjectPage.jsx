@@ -4,7 +4,7 @@ import { MyContext } from "../MyContextProvider";
 import { useContext } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import ProjectContainer from "../components/ProjectContainer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import projects from "../projectArray";
 
 function MyProjectPage(props) {
@@ -19,6 +19,9 @@ function MyProjectPage(props) {
       projectControls.start("visible");
     }
   }, [projectIsInView]);
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -43,12 +46,13 @@ function MyProjectPage(props) {
               )}
             </li>
             <li>
-              <a
-                onClick={() => navigate("/portfolio/home")}
+              <Link
+                to="/portfolio/home"
+                onClick={handleClick}
                 className="bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
               >
                 Home
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -80,12 +84,13 @@ function MyProjectPage(props) {
                 );
               })}
             </div>
-            <a
-              onClick={() => navigate("/portfolio/home")}
+            <Link
+              to="/portfolio/home"
+              onClick={handleClick}
               className="bg-gradient-to-r cursor-pointer mt-5 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md "
             >
               <h2 className="">Home</h2>
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

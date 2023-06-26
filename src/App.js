@@ -17,7 +17,7 @@ import {
 import ProjectContainer from "./components/ProjectContainer";
 import projects from "./projectArray";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 function App() {
   const navigate = useNavigate();
   const { darkMode, setDarkMode } = useContext(MyContext);
@@ -78,6 +78,10 @@ function App() {
     };
   }, []);
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="bg-white px-5 md:px-10 lg:px-20 dark:bg-gray-900">
@@ -103,12 +107,13 @@ function App() {
               )}
             </li>
             <li>
-              <a
-                onClick={() => navigate("/portfolio/projects")}
+              <Link
+                to="/portfolio/projects"
+                onClick={handleClick}
                 className="bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
               >
                 Projects
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -284,12 +289,13 @@ function App() {
                 );
               })}
             </div>
-            <a
-              onClick={() => navigate("/portfolio/projects")}
+            <Link
+              onClick={handleClick}
+              to="/portfolio/projects"
               className="bg-gradient-to-r cursor-pointer mt-5 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md "
             >
               <h2 className="">More Projects</h2>
-            </a>
+            </Link>
           </div>
         </motion.div>
 
