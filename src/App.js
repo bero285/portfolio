@@ -5,7 +5,7 @@ import { MyContext } from "./MyContextProvider";
 import { useContext } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import avatar from "./assets/freelancer.png";
-import { FaReact, FaCss3, FaJs } from "react-icons/fa";
+import { FaReact, FaCss3, FaJs,FaNode } from "react-icons/fa";
 import tailwind from "./assets/tailwind.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import {
@@ -13,15 +13,17 @@ import {
   AiFillGithub,
   AiFillHtml5,
   AiFillFacebook,
+
 } from "react-icons/ai";
 import ProjectContainer from "./components/ProjectContainer";
 import projects from "./projectArray";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
+import SkillBox from "./components/Skillbox";
 function App() {
   const navigate = useNavigate();
   const { darkMode, setDarkMode } = useContext(MyContext);
-  const proffesion = "Front-end Developer";
+  const proffesion = "Frontend Developer";
   const [word, setWord] = useState("");
   const mainRef = useRef(null);
   const aboutRef = useRef(null);
@@ -206,55 +208,70 @@ function App() {
         >
           <div className="flex flex-col items-center mt-36 py-5" ref={skillRef}>
             <h1 className="text-3xl pb-5  dark:text-white">My Skills</h1>
-            <div className="flex gap-16 py-5  flex-wrap  justify-center items-center md:w-3/5 lg:w-7/12">
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <AiFillHtml5 size={65} color="#e34c26" />
-                <h3 className="text-2xl  dark:text-white">Html</h3>
-              </div>
+            <div className="flex gap-16 py-5  flex-wrap  justify-center items-center w-11/12 md:w-4/5 lg:w-9/12">
+              <SkillBox>
+              <AiFillHtml5 size={50} color="#e34c26" />
+                <h3 className="text-xl  dark:text-white">Html</h3>
+              </SkillBox>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <FaCss3 size={65} color="#264de4" />
-                <h3 className="text-2xl  dark:text-white">Css</h3>
-              </div>
+              <SkillBox>
+              <FaCss3 size={45} color="#264de4" />
+                <h3 className="text-xl  dark:text-white">Css</h3>
+              </SkillBox>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <FaJs
-                  size={65}
+              <SkillBox>
+              <FaJs
+                  size={50}
                   color="yellow"
                   className="bg-black dark:bg-transparent"
                 />
 
-                <h3 className="text-2xl   dark:text-white">Javascript</h3>
-              </div>
+                <h3 className="text-xl dark:text-white">Javascript</h3>
+              </SkillBox>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <FaReact size={65} color={darkMode ? "white" : "black"} />
-                <h3 className="text-2xl  dark:text-white">React</h3>
-              </div>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <FaReact size={65} color="cyan" />
-                <h3 className="text-2xl  dark:text-white">React Native</h3>
-              </div>
+              <SkillBox>
+              <FaReact size={50} color={darkMode ? "white" : "black"} />
+                <h3 className="text-xl  dark:text-white">React</h3>
+              </SkillBox>
+              
+              <SkillBox>
+              <FaReact size={50} color="cyan" />
+                <h3 className="text-xl  dark:text-white">React Native</h3>
+              </SkillBox>
+              
+              <SkillBox>
+              <img src={tailwind} className="w-16" />
+                <h3 className="text-xl  dark:text-white">Tailwind Css</h3>
+              </SkillBox>
+              
+              <SkillBox>
+              <FaNode className="dark:text-white" size={55} />
+                {/* <h3 className="text-xl  dark:text-white">Node</h3> */}
+              </SkillBox>
+              
+              <SkillBox>
+              <img  className="w-12" src="https://mongodb-js.github.io/leaf/mongodb-leaf_512x512.png"/>
+                <h3 className="text-xl  dark:text-white">MongoDB</h3>
+              </SkillBox>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <img src={tailwind} className="w-16" />
-                <h3 className="text-2xl  dark:text-white">Tailwind Css</h3>
-              </div>
-
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1 ">
-                <i
+              <SkillBox>
+              <i
                   className="fa-brands fa-git-alt"
-                  style={{ fontSize: "60px", color: "#F1502F" }}
+                  style={{ fontSize: "50px", color: "#F1502F" }}
                 ></i>
 
-                <h3 className="text-2xl  dark:text-white">Git</h3>
-              </div>
+                <h3 className="text-xl  dark:text-white">Git</h3>
+              </SkillBox>
+              
+              <SkillBox>
+              <AiFillGithub className="dark:text-white" size={50} />
+                <h3 className="text-xl  dark:text-white">Github</h3>
+              </SkillBox>
 
-              <div className="flex flex-col justify-center items-center basis-1/3 text-center md:basis-1">
-                <AiFillGithub className="dark:text-white" size={65} />
-                <h3 className="text-2xl  dark:text-white">Github</h3>
-              </div>
+           
+
+
             </div>
           </div>
         </motion.div>

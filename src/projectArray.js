@@ -5,30 +5,48 @@ import CalorieCalculator from "./assets/calorie-calculator.png";
 import MovieApp from "./assets/movie-app.png";
 import TicTacToe from "./assets/tic-tac-toe.png";
 import CreditKey from "./assets/credit-key1.png";
+import chatApp from "./assets/chatapp.jpg";
+import Planets from "./assets/planets.jpg";
 const projects = [
   {
     name: "Social Media App",
-    tools: ["Mern Stack", "React", "Node", "Express", "Mongodb"],
+    tools: ["MERN Stack", "React", "Node", "Express", "MongoDB"],
     image: Sociopedia,
+    website: "https://sociopedia-bero.netlify.app/",
     code: "https://github.com/bero285/Social-Media-App",
     description:
-      "Social Media App that I created following tutorial.Also added several new feature including Comment section.",
+      "Social Media App that I made with the help of a tutorial. Also added several new features, including Comment section.",
   },
   {
-    name: "landing page",
-    tools: ["Html", "Css"],
-    image: landingPage,
-    website: "https://bero285.github.io/Front-end-website/",
-    code: "https://github.com/bero285/Front-end-website",
-    description: "a simple front-end project with beautifull design.",
+    name: "Planets Fact Site",
+    tools: ["React", "TypeScript","Tailwind Css"],
+    image: Planets,
+    website: "https://bero-planet-facts.netlify.app/",
+    code: "https://github.com/bero285/Planets-Fact",
+    description: "Planet facts site Created with React.",
   },
   {
     name: "Netflix Clone",
     tools: ["React"],
     image: NetflixClone,
-    website: "https://bero285.github.io/Netflix/",
+    website: "https://bero3333.netlify.app/",
     code: "https://github.com/bero285/Netflix",
     description: "Netlfix Clone created with React.",
+  },
+  {
+    name: "Chat App",
+    tools: ["React Native", "Node", "Express", "MongoDB", "socket.io"],
+    image: chatApp,
+    code: "https://github.com/bero285/Chat-app",
+    description: "Real-time Chat Application built with React Native.",
+  },
+  {
+    name: "Landing page",
+    tools: ["Html", "Css"],
+    image: landingPage,
+    website: "https://bero1111.netlify.app/",
+    code: "https://github.com/bero285/Front-end-website",
+    description: "a simple front-end project with beautifull design.",
   },
   {
     name: "Credit App",
@@ -40,9 +58,9 @@ const projects = [
   },
   {
     name: "Calorie Calculator",
-    tools: ["Html", "Css", "js"],
+    tools: ["Html", "Css", "Js"],
     image: CalorieCalculator,
-    website: "https://bero285.github.io/Calorie-Calculator/",
+    website: "https://bero1000.netlify.app/",
     code: "https://github.com/bero285/Calorie-Calculator",
     description: "This was my first freelancing project. ",
   },
@@ -56,7 +74,7 @@ const projects = [
   },
 
   {
-    name: "Tic Tac Toe",
+    name: "Tic-Tac-Toe",
     tools: ["React Native"],
     image: TicTacToe,
     code: "https://github.com/bero285/Tic-Tac-Toe",
