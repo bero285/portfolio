@@ -13,7 +13,7 @@ import {
   AiFillGithub,
   AiFillHtml5,
   AiFillFacebook,
-
+  
 } from "react-icons/ai";
 import ProjectContainer from "./components/ProjectContainer";
 import projects from "./projectArray";
@@ -226,7 +226,7 @@ function App() {
                   className="bg-black dark:bg-transparent"
                 />
 
-                <h3 className="text-xl dark:text-white">Javascript</h3>
+                <h3 className="text-xl dark:text-white">JavaScript</h3>
               </SkillBox>
 
 

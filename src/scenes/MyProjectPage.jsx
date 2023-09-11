@@ -6,7 +6,13 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import ProjectContainer from "../components/ProjectContainer";
 import { useNavigate, Link } from "react-router-dom";
 import projects from "../projectArray";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillHtml5,
+  AiFillFacebook,
 
+} from "react-icons/ai";
 function MyProjectPage(props) {
   const navigate = useNavigate();
   const { darkMode, setDarkMode } = useContext(MyContext);
@@ -92,6 +98,33 @@ function MyProjectPage(props) {
               <h2 className="">Home</h2>
             </Link>
           </div>
+
+          <div className="flex flex-col justify-center items-center pt-20 pb-0">
+            <h1 className="animate-bounce text-3xl  dark:text-white">
+              Contact Me
+            </h1>
+            <div className="text-5xl flex justify-center gap-16 pt-10 text-gray-600">
+              <a
+                href="https://www.linkedin.com/in/giorgi-beriashvili-072526255/"
+                target="_blank"
+              >
+                <AiFillLinkedin className="dark:text-white" />
+              </a>
+              <a href="https://github.com/bero285" target="_blank">
+                <AiFillGithub className="dark:text-white" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100008372558451"
+                target="_blank"
+              >
+                <AiFillFacebook className="dark:text-white" />
+              </a>
+            </div>
+            <h1 className="text-2xl pt-3  dark:text-white">
+              gioberia23@gmail.com
+            </h1>
+          </div>
+
         </motion.div>
       </div>
     </div>

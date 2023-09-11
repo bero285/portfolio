@@ -19,7 +19,7 @@ const projects = [
   },
   {
     name: "Planets Fact Site",
-    tools: ["React", "TypeScript","Tailwind Css"],
+    tools: ["React", "TypeScript", "Tailwind Css"],
     image: Planets,
     website: "https://bero-planet-facts.netlify.app/",
     code: "https://github.com/bero285/Planets-Fact",
@@ -56,30 +56,30 @@ const projects = [
     description:
       "React native Application with beautifull design and functionality.",
   },
-  {
-    name: "Calorie Calculator",
-    tools: ["Html", "Css", "Js"],
-    image: CalorieCalculator,
-    website: "https://bero1000.netlify.app/",
-    code: "https://github.com/bero285/Calorie-Calculator",
-    description: "This was my first freelancing project. ",
-  },
+  // {
+  //   name: "Calorie Calculator",
+  //   tools: ["Html", "Css", "Js"],
+  //   image: CalorieCalculator,
+  //   website: "https://bero1000.netlify.app/",
+  //   code: "https://github.com/bero285/Calorie-Calculator",
+  //   description: "This was my first freelancing project. ",
+  // },
 
-  {
-    name: "Movie App",
-    tools: ["React Native"],
-    image: MovieApp,
-    code: "https://github.com/bero285/Movie_app",
-    description: "Movie App created with React Native.",
-  },
+  // {
+  //   name: "Movie App",
+  //   tools: ["React Native"],
+  //   image: MovieApp,
+  //   code: "https://github.com/bero285/Movie_app",
+  //   description: "Movie App created with React Native.",
+  // },
 
-  {
-    name: "Tic-Tac-Toe",
-    tools: ["React Native"],
-    image: TicTacToe,
-    code: "https://github.com/bero285/Tic-Tac-Toe",
-    description: "1v1 tic-tac-toe game with React Native.",
-  },
+  // {
+  //   name: "Tic-Tac-Toe",
+  //   tools: ["React Native"],
+  //   image: TicTacToe,
+  //   code: "https://github.com/bero285/Tic-Tac-Toe",
+  //   description: "1v1 tic-tac-toe game with React Native.",
+  // },
 ];
 
 export default projects;
