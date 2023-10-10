@@ -1,14 +1,15 @@
 import landingPage from "./assets/landing-page.png";
-import Sociopedia from "./assets/sociopedia.png";
+import SocialMedia from "./assets/social-media.png";
 import NetflixClone from "./assets/netflix-clone.png";
-import CreditKey from "./assets/credit-key1.png";
-import chatApp from "./assets/chatapp.jpg";
+import FinanceApp from "./assets/FinanceApp.png";
+import chatApp from "./assets/ChatApp.jpg";
 import Planets from "./assets/planets.jpg";
+import TicTacToe from "./assets/TicTacToe.jpg";
 const projects = [
   {
     name: "Social Media App",
     tools: ["MERN Stack", "React", "Node", "Express", "MongoDB"],
-    image: Sociopedia,
+    image: SocialMedia,
     website: "https://sociopedia-bero.netlify.app/",
     code: "https://github.com/bero285/Social-Media-App",
     description:
@@ -24,11 +25,11 @@ const projects = [
   },
   {
     name: "Netflix Clone",
-    tools: ["React"],
+    tools: ["React", "i18next"],
     image: NetflixClone,
-    website: "https://bero3333.netlify.app/",
+    website: "https://bero3334.netlify.app/",
     code: "https://github.com/bero285/Netflix",
-    description: "Netlfix Clone created with React.",
+    description: "Netlfix Clone created with React. Added Translation feature with i18next.",
   },
   {
     name: "Chat App",
@@ -46,12 +47,20 @@ const projects = [
     description: "a simple front-end project with beautifull design.",
   },
   {
-    name: "Credit App",
+    name: "Finance App",
     tools: ["React Native"],
-    image: CreditKey,
+    image: FinanceApp,
     code: "https://github.com/bero285/Commerce-App",
     description:
       "React native Application with beautifull design and functionality.",
+  },
+  {
+    name: "Tic-Tac-Toe Game",
+    tools: ["React Native"],
+    image: TicTacToe,
+    code: "https://github.com/bero285/Tic-Tac-Toe",
+    description:
+      "Tic-Tac-Toe game build with React Native",
   },
 
 ];
